@@ -6,11 +6,13 @@ int main()
     int n;
     cin>>n;
     int a[n];
+    int maxn = INT_MIN;
     for(int i=0;i<n;i++)
     {
         cin>>a[i];
+        maxn = max(maxn,a[i]);
     }
-    const int N = 1e6+2;
+    const int N = maxn+1;
     int idx[N];
     for(int i=0;i<N;i++)
     {
