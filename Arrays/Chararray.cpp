@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 int main()
@@ -43,7 +43,7 @@ int main()
 
     int i=0;
     int curr=0, Maxlen=0;
-
+    int st=0,maxst=0;
     while(1)
     {
         if(arr[i] == ' ' || arr[i] == '\0')
@@ -51,17 +51,21 @@ int main()
             if(curr>Maxlen)
             {
                 Maxlen = curr;
+                maxst= st;
             }
             curr = 0;
+            st = i+1;
         }
         else
-        {curr++;}
+        curr++;
         if(arr[i] == '\0')
-        {
-            break;
-        }
-        i++;
+        break;
+        i++;  
     }
     cout<<Maxlen<<endl;
+    for(int i=0;i<Maxlen;i++)
+    {
+        cout<<arr[i+maxst];
+    }
     return 0;
 }
