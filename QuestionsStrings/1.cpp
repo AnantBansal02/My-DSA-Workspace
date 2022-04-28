@@ -22,5 +22,12 @@ int main()
         {s[i] += 32;} 
     }
     cout<<s<<endl;
+
+    // Using direct function :
+    
+    transform(s.begin(), s.end(), s.begin(), ::toupper);
+    cout<<s<<endl;
+    transform(s.begin(), s.end(), s.begin(), ::tolower);
+    cout<<s<<endl;
     return 0;
 }
