@@ -5,6 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Lab",
+            "request": "launch",
+            "mainClass": "Lab",
+            "projectName": "Workspace_2337c6de"
+        },
+        {
+            "type": "java",
+            "name": "Launch Graph",
+            "request": "launch",
+            "mainClass": "Graph",
+            "projectName": "Workspace_2337c6de"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Workspace_2337c6de"
+        },
+        {
             "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
@@ -22,11 +43,8 @@
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
-                 
             ],
             "preLaunchTask": "C/C++: g++.exe build active file"
         }
-
-    
     ]
 }
