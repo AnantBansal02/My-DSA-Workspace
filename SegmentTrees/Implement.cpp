@@ -31,6 +31,20 @@ int query(int idx, int low, int high, int l, int r, int seg[]){
 
     return min(left,right);
 }
+void update(int idx, int low, int high, int index, int val, int seg[]){
+    if(low == high){
+        seg[idx] = val;
+        return;
+    }
+    int mid = (low + high) >> 1;
+    if(index<=mid){
+        update(2*idx+1, low, mid, index, val, seg);
+    }
+    else{
+        update(2*idx+2, mid+1, high, index, val, seg);
+    }
+    seg[idx] = min(seg[2*idx+1], seg[2*idx+2]);
+}
 int main(){
     int n;cin>>n;
     int arr[n];
@@ -39,13 +53,22 @@ int main(){
     }
     int seg[4*n];
     build(0,0,n-1,arr,seg);
-    for(int i=0;i<4*n;i++)
-        cout<<seg[i]<<" ";
-    // int q;cin>>q;
-    // while(q--){
-    //     int l,r;
-    //     cin>>l>>r;
-    //     cout<<query(0,0,n-1,l,r,seg)<<"\n";
-    // }
+    // for(int i=0;i<4*n;i++)
+    //     cout<<seg[i]<<" ";
+    int q;cin>>q;
+    while(q--){
+        int type;cin>>type;
+        if(type==1){
+            int l,r;
+            cin>>l>>r;
+            cout<<query(0,0,n-1,l,r,seg)<<"\n";
+        }
+        else{
+            int i,val;
+            cin>>i>>val;
+            update(0,0,n-1,i,val,seg);
+            arr[i] = val;
+        }
+    }
     return 0;
 }
