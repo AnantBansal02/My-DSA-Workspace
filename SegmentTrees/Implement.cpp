@@ -46,6 +46,10 @@ void update(int idx, int low, int high, int index, int val, int seg[]){
     seg[idx] = min(seg[2*idx+1], seg[2*idx+2]);
 }
 int main(){
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt" , "w", stdout);
+    #endif
     int n;cin>>n;
     int arr[n];
     for(int i=0;i<n;i++){
