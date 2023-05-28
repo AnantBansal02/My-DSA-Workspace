@@ -1,0 +1,1 @@
+{"name":"Local: INVCNT","url":"c:\\vs code\\Workspace\\SegmentTrees\\INVCNT.cpp","tests":[{"id":1683047930494,"input":"2\n\n3\n3\n1\n2\n\n5\n2\n3\n8\n6\n1","output":"2\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\vs code\\Workspace\\SegmentTrees\\INVCNT.cpp","group":"local","local":true}
