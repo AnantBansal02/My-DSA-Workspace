@@ -1,0 +1,1 @@
+{"name":"Local: Coins","url":"c:\\vs code\\Workspace\\SegmentTrees\\Coins.cpp","tests":[{"id":1686556632482,"input":"7\n1 1 0 0 1 0 1\n4\n1 1 5\n2 2 3\n2 5 5\n1 1 5","output":"2\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\vs code\\Workspace\\SegmentTrees\\Coins.cpp","group":"local","local":true}

@@ -76,5 +76,6 @@
         "c:\\mysql-connector.jar\\mysql-connector.jar",
         "c:\\Users\\anant\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-17.0.3.7-hotspot\\lib\\mysql-connector.jar",
         "c:\\mysql-connector\\mysql-connector.jar"
-    ]
+    ],
+    "cph.general.onceMaintainerMessage": false
 }

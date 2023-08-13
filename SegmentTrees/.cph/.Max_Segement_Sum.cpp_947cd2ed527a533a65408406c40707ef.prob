@@ -1,0 +1,1 @@
+{"name":"Local: Max_Segement_Sum","url":"c:\\vs code\\Workspace\\SegmentTrees\\Max_Segement_Sum.cpp","tests":[{"id":1691655352137,"input":"5 2\n5 -4 4 3 -5\n4 3\n3 -1","output":"8\n11\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\vs code\\Workspace\\SegmentTrees\\Max_Segement_Sum.cpp","group":"local","local":true}

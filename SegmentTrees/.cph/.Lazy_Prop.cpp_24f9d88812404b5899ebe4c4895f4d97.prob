@@ -1,0 +1,1 @@
+{"name":"Local: Lazy_Prop","url":"c:\\vs code\\Workspace\\SegmentTrees\\Lazy_Prop.cpp","tests":[{"id":1686290352559,"input":"5\n1 2 3 4 5\n3\n1 0 4\n2 1 3 2\n1 0 4","output":"15\n21"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\vs code\\Workspace\\SegmentTrees\\Lazy_Prop.cpp","group":"local","local":true}
